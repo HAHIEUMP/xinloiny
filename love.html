@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Yêu bé 💖</title>
+<style>
+body {
+    text-align: center;
+    background: pink;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    font-size: 24px;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    0% { top: -10px; }
+    100% { top: 100%; }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Cảm ơn bé đã tha lỗi cho anh 💖</h1>
+<p>Anh hứa sẽ ngoan hơn 🥺</p>
+
+<script>
+for(let i=0;i<30;i++){
+    let heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random()*100 + "%";
+    heart.style.animationDuration = (Math.random()*3+2) + "s";
+    document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
